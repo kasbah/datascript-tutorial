@@ -47,6 +47,6 @@ d.transact(conn, datoms, "initial info about Igor and Ivan")
 // report is regular JS object'
 // query mori values from conn with CLJS API
 
-var result = d.q(parse('[:find ?n :in $ ?a :where [?e "friend" ?f] [?e "age" ?a] [?f "name" ?n]]'), d.db(conn), 18);
+var result = d.q('[:find ?n :in $ ?a :where [?e "friend" ?f] [?e "age" ?a] [?f "name" ?n]]', d.db(conn), 18);
 ```
 
